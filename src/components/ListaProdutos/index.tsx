@@ -16,7 +16,7 @@ export default function ListaProdutos() {
 
     return (
 
-        <View>
+        <ScrollView>
             <Text style={styles.label}>Quantidade total de produtos: {produtos?.length}</Text>
 
             <FlatList
@@ -30,7 +30,7 @@ export default function ListaProdutos() {
                     />
                 )}
             />
-        </View>
+        </ScrollView>
     );
 }
 

@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     },
     value: {
         fontSize: 16,
-        padding: 5,
+        padding: 5
         // fontWeight: 'bold'
     },
     container: {
