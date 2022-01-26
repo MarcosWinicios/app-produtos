@@ -33,7 +33,8 @@ const styles = StyleSheet.create({
         backgroundColor: '#ccc',
         margin: 10,
         borderRadius: 10,
-        marginTop: 25
+        marginTop: 25,
+        padding: 8
     }
 })
 
