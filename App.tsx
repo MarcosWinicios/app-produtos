@@ -29,6 +29,6 @@ const styles = StyleSheet.create({
   },
   containerList: {
     marginBottom: 25,
-    paddingBottom: 55
+    paddingBottom: 200
   }
 });
