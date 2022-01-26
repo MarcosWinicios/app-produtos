@@ -3,21 +3,32 @@ import ListaProdutos from './src/components/ListaProdutos';
 
 export default function App() {
   return (
-    <View >
-        <Text style={styles.header} >Lista de produtos</Text>
-        <Text >
-          <ListaProdutos />
-        </Text>
-    </View>
+    <>
+      <View style={styles.containerHeader}>
+        <Text style={styles.headerText} >Lista de produtos</Text>
+      </View>
+      <View style={styles.containerList}>
+        <ListaProdutos />
+      </View>
+    </>
   );
 }
 
 const styles = StyleSheet.create({
-  header: {
+  headerText: {
     alignItems: 'center',
     paddingTop: 20,
     textAlign: 'center',
-    // fontWeight: 'bold',
-    fontSize: 25, 
+    marginTop: 15,
+    fontWeight: 'bold',
+    fontSize: 25,
   },
+  containerHeader: {
+    marginBottom: 15,
+    backgroundColor: '#f0f0f0'
+  },
+  containerList: {
+    marginBottom: 25,
+    paddingBottom: 55
+  }
 });

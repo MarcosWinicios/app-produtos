@@ -2,17 +2,17 @@ import { Text, View } from "react-native";
 import { Produto } from "../../types/produto";
 import { StyleSheet } from "react-native";
 
-export default function ItemProduto({nome, quantidade, valor }: Produto) {
+export default function ItemProduto({ nome, quantidade, valor }: Produto) {
     return (
         <View style={styles.container}>
             <Text style={styles.label}>Nome:</Text>
             <Text style={styles.value}>{nome}</Text>
 
             <Text style={styles.label}>Quantidade:</Text>
-            <Text style={styles.value}>Quantidade: {quantidade}</Text>
+            <Text style={styles.value}>{quantidade}</Text>
 
             <Text style={styles.label}>Valor:</Text>
-            <Text style={styles.value}>Valor:{valor} </Text>
+            <Text style={styles.value}>R$ {valor},00 </Text>
         </View>
     );
 }
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     },
     container: {
         marginBottom: 15,
-        backgroundColor: '#ccc',
+        backgroundColor: '#f1f1f1f1',
         margin: 10,
         borderRadius: 10,
         marginTop: 25,
